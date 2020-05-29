@@ -25,7 +25,7 @@ should return a dictionary with words as keys, and their counts as values.
 
 # Your name, plus anyone who helped you with this assignment
 # Give credit where credit is due.
-__author__ = "Haley Collard"
+__author__ = "Haley Collard with some help from demo"
 
 import sys
 
@@ -54,10 +54,6 @@ def print_words(filename):
     key_arr.sort()
     for i, word in enumerate(key_arr):
         print(word)
-
-
-def sort_helper(x):
-    return x[1]
 
 
 def print_top(filename):
