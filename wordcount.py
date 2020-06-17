@@ -42,6 +42,20 @@ def create_word_dict(filename):
                     my_dict[word] = 1
     return my_dict
 
+# class code:
+# with open(filename) as f:
+#     text = f.read().split()
+
+# word_dict = {}
+# for word in text:
+#     if word not in word_dict:
+#         word_dict[word] = 1
+#     else:
+#         word_dict[word] += 1
+# sorted_words = sorted(list(word_dict.items()))
+# for k, v in sorted_words:
+#     print(f"{k} : {v}")
+
 
 def print_words(filename):
     """Prints one per line '<word> : <count>', sorted
@@ -54,6 +68,16 @@ def print_words(filename):
     key_arr.sort()
     for i, word in enumerate(key_arr):
         print(word)
+
+# class code:
+# def sort_by_count(t):
+#     return t[1]
+
+# def print_top(filename):
+#     word_dict = create_word_dict(filename)
+#     sorted_words = sorted(list(word_dict.items()), key=sort_by_count, reverse=True)
+#     for k, v in sorted_words[:20]:
+#       print(f"{k} : {v}")
 
 
 def print_top(filename):
