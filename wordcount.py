@@ -56,6 +56,10 @@ def create_word_dict(filename):
 # for k, v in sorted_words:
 #     print(f"{k} : {v}")
 
+# refactor line 51-54
+# word_dict.setdefault(word, 0)
+# word_dict[word] += 1
+
 
 def print_words(filename):
     """Prints one per line '<word> : <count>', sorted
